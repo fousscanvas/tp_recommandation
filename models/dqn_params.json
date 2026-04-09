@@ -1,0 +1,14 @@
+{
+  "hyperparams": {
+    "gamma": 0.9,
+    "epsilon_decay": 0.997,
+    "epsilon_min": 0.1,
+    "lr": 0.001,
+    "embed_dim": 64,
+    "hidden": 64
+  },
+  "n_items": 50,
+  "reward_mean": 1.3066666666666666,
+  "ctr_mean": 0.11133333333333333,
+  "diversity": 0.203
+}

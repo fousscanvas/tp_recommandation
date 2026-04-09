@@ -1,0 +1,17 @@
+{
+  "hyperparams": {
+    "gamma": 0.9,
+    "epsilon_decay": 0.997,
+    "epsilon_min": 0.1,
+    "embed_dim": 32,
+    "lr": 0.001,
+    "hidden_dim": 64,
+    "seq_len": 4
+  },
+  "n_items": 50,
+  "seq_len": 4,
+  "reward_mean": 1.31,
+  "note": "run evaluate_gru to fill metrics",
+  "ctr_mean": 0.133,
+  "diversity": 0.5843333333333334
+}

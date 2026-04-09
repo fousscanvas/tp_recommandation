@@ -1,0 +1,33 @@
+# Smart E-Commerce Backend Requirements
+# Install with: pip3 install -r requirements.txt
+
+# Core ML
+torch>=2.0.0
+numpy>=1.23.0
+
+# Web Framework
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Database (Optional, for production)
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0
+# pymongo>=4.0.0
+
+# Production Server (Optional)
+# gunicorn>=21.0.0
+
+# Monitoring (Optional)
+# prometheus-client>=0.17.0
+# python-json-logger>=2.0.0
+
+# Security (Optional)
+# flask-talisman>=1.0.0
+# flask-limiter>=3.0.0
+
+# Testing
+pytest>=7.0.0
+requests>=2.28.0
+
+# Development
+# python-dotenv>=0.20.0

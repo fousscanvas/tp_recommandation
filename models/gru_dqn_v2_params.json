@@ -1,0 +1,18 @@
+{
+  "hyperparams": {
+    "gamma": 0.9,
+    "epsilon_decay": 0.997,
+    "epsilon_min": 0.02,
+    "embed_dim": 64.0,
+    "tau": 0.001,
+    "lr": 0.002,
+    "hidden_dim": 128.0,
+    "seq_len": 8.0
+  },
+  "n_items": 50,
+  "seq_len": 8,
+  "reward_mean": 1.8266666666666667,
+  "note": "seq_len up to 32, no bonus, soft update",
+  "ctr_mean": 0.17033333333333334,
+  "diversity": 0.6026666666666667
+}

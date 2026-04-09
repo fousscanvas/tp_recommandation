@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart E-Commerce with RL Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🛍️ Smart Shop</h1>
+            <p class="subtitle">AI-powered product recommendations</p>
+            <div class="header-info">
+                <span id="user-id-display">User: Pending...</span>
+                <span id="user-stats">Purchases: 0 | Spent: $0.00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container main">
+        <!-- Product Grid (Left Column) -->
+        <section class="products-section">
+            <h2>Browse Products</h2>
+            <div id="products-grid" class="products-grid">
+                <!-- Products will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Sidebar (Right Column) -->
+        <aside class="sidebar">
+            <!-- Current Product Details -->
+            <div class="card">
+                <h3>Currently Viewing</h3>
+                <div id="current-product" class="current-product">
+                    <div class="placeholder">Select a product...</div>
+                </div>
+            </div>
+
+            <!-- AI Recommendation -->
+            <div class="card recommendation-card">
+                <h3>🤖 AI Recommendation</h3>
+                <div id="recommendation" class="recommendation">
+                    <div class="placeholder">View a product to get recommendation</div>
+                </div>
+            </div>
+
+            <!-- Purchase History -->
+            <div class="card">
+                <h3>Your Purchases</h3>
+                <div id="purchase-history" class="history-list">
+                    <p class="empty-state">No purchases yet</p>
+                </div>
+            </div>
+
+            <!-- Debug Info -->
+            <div class="card debug-card">
+                <h3>📊 Debug Info</h3>
+                <div id="debug-info" class="debug-info">
+                    <p><strong>User ID:</strong> <span id="debug-user">-</span></p>
+                    <p><strong>Current Item:</strong> <span id="debug-item">-</span></p>
+                    <p><strong>Model Confidence:</strong> <span id="debug-confidence">-</span></p>
+                    <p><strong>API Status:</strong> <span id="api-status" class="status-pending">Connecting...</span></p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Cart Summary (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="cart-summary">
+                <h3>Shopping Summary</h3>
+                <table>
+                    <tr>
+                        <td>Total Items Purchased:</td>
+                        <td id="total-items">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Clicks:</td>
+                        <td id="total-clicks">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Amount Spent:</td>
+                        <td id="total-spent">$0.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

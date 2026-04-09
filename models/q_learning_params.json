@@ -1,0 +1,13 @@
+{
+  "hyperparams": {
+    "gamma": 0.9,
+    "alpha": 0.01,
+    "epsilon_min": 0.02,
+    "epsilon_decay": 0.994
+  },
+  "n_items": 50,
+  "reward_mean": 1.6233333333333333,
+  "ctr_mean": 0.14200000000000002,
+  "diversity": 0.23366666666666666,
+  "note": "Diversity bonus=0 (removed)"
+}
