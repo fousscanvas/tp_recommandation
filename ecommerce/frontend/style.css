@@ -102,7 +102,8 @@ body {
     box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
 }
 
-.product-image {
+.product-image,
+.product-image-img {
     width: 100%;
     height: 150px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -112,6 +113,14 @@ body {
     color: white;
     font-size: 2em;
     font-weight: bold;
+    object-fit: cover;
+}
+
+/* Emoji fallback for broken images */
+.product-image-img:broken,
+.product-image-img[alt],
+.product-image-img {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
 .product-info {

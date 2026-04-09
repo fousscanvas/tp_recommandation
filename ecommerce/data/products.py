@@ -9,7 +9,7 @@ PRODUCTS = [
         'name': 'Laptop Pro',
         'category': 'electronics',
         'price': 999.99,
-        'image': 'laptop_pro.jpg',
+        'image': 'https://source.unsplash.com/400x300/?laptop,computer',
         'description': 'Portable haute performance'
     },
     {
@@ -17,7 +17,7 @@ PRODUCTS = [
         'name': 'Wireless Headphones',
         'category': 'electronics',
         'price': 199.99,
-        'image': 'headphones.jpg',
+        'image': 'https://source.unsplash.com/400x300/?headphones,audio',
         'description': 'Son premium sans fil'
     },
     {
@@ -25,7 +25,7 @@ PRODUCTS = [
         'name': 'USB-C Cable',
         'category': 'electronics',
         'price': 29.99,
-        'image': 'cable.jpg',
+        'image': 'https://source.unsplash.com/400x300/?cable,connector',
         'description': 'Câble haute vitesse'
     },
     {
@@ -33,7 +33,7 @@ PRODUCTS = [
         'name': 'Sneakers Running',
         'category': 'clothing',
         'price': 89.99,
-        'image': 'sneakers.jpg',
+        'image': 'https://source.unsplash.com/400x300/?sneakers,running,shoes',
         'description': 'Chaussures de course confortables'
     },
     {
@@ -41,7 +41,7 @@ PRODUCTS = [
         'name': 'T-Shirt Cotton',
         'category': 'clothing',
         'price': 24.99,
-        'image': 'tshirt.jpg',
+        'image': 'https://source.unsplash.com/400x300/?tshirt,cotton,clothing',
         'description': 'T-shirt 100% coton'
     },
     {
@@ -49,7 +49,7 @@ PRODUCTS = [
         'name': 'Jeans Classic',
         'category': 'clothing',
         'price': 69.99,
-        'image': 'jeans.jpg',
+        'image': 'https://source.unsplash.com/400x300/?jeans,denim',
         'description': 'Jean durable et élégant'
     },
     {
@@ -57,7 +57,7 @@ PRODUCTS = [
         'name': 'Coffee Maker',
         'category': 'home',
         'price': 79.99,
-        'image': 'coffee.jpg',
+        'image': 'https://source.unsplash.com/400x300/?coffee,maker,kitchen',
         'description': 'Machine à café programmable'
     },
     {
@@ -65,7 +65,7 @@ PRODUCTS = [
         'name': 'Desk Lamp',
         'category': 'home',
         'price': 49.99,
-        'image': 'lamp.jpg',
+        'image': 'https://source.unsplash.com/400x300/?lamp,desk,lighting',
         'description': 'Lampe LED ajustable'
     },
     {
@@ -73,7 +73,7 @@ PRODUCTS = [
         'name': 'Plant Pot',
         'category': 'home',
         'price': 19.99,
-        'image': 'plant.jpg',
+        'image': 'https://source.unsplash.com/400x300/?plant,pot,decor',
         'description': 'Pot élégant pour plantes'
     },
     {
@@ -81,7 +81,7 @@ PRODUCTS = [
         'name': 'Book Python',
         'category': 'books',
         'price': 39.99,
-        'image': 'book_python.jpg',
+        'image': 'https://source.unsplash.com/400x300/?python,programming,book',
         'description': 'Guide complet Python'
     },
     # === ELECTRONICS (10-17) ===
@@ -90,7 +90,7 @@ PRODUCTS = [
         'name': 'Smartphone Pro',
         'category': 'electronics',
         'price': 799.99,
-        'image': 'phone.jpg',
+        'image': 'https://source.unsplash.com/400x300/?smartphone,mobile,phone',
         'description': 'Téléphone haut de gamme'
     },
     {
@@ -98,7 +98,7 @@ PRODUCTS = [
         'name': 'Tablet Plus',
         'category': 'electronics',
         'price': 599.99,
-        'image': 'tablet.jpg',
+        'image': 'https://source.unsplash.com/400x300/?tablet,ipad,device',
         'description': 'Tablette tactile haute performance'
     },
     {
@@ -106,7 +106,7 @@ PRODUCTS = [
         'name': '4K Monitor',
         'category': 'electronics',
         'price': 449.99,
-        'image': 'monitor.jpg',
+        'image': 'https://source.unsplash.com/400x300/?monitor,screen,4k',
         'description': 'Écran 4K 27 pouces'
     },
     {
@@ -114,7 +114,7 @@ PRODUCTS = [
         'name': 'Mechanical Keyboard',
         'category': 'electronics',
         'price': 149.99,
-        'image': 'keyboard.jpg',
+        'image': 'https://source.unsplash.com/400x300/?keyboard,mechanical,rgb',
         'description': 'Clavier mécanique RGB'
     },
     {
@@ -122,7 +122,7 @@ PRODUCTS = [
         'name': 'Gaming Mouse',
         'category': 'electronics',
         'price': 79.99,
-        'image': 'mouse.jpg',
+        'image': 'https://source.unsplash.com/400x300/?mouse,gaming,computer',
         'description': 'Souris gaming précise'
     },
     {
@@ -130,7 +130,7 @@ PRODUCTS = [
         'name': 'Webcam HD',
         'category': 'electronics',
         'price': 99.99,
-        'image': 'webcam.jpg',
+        'image': 'https://source.unsplash.com/400x300/?webcam,camera,video',
         'description': 'Webcam 1080p avec micro'
     },
     {
@@ -138,7 +138,7 @@ PRODUCTS = [
         'name': 'Power Bank 20K',
         'category': 'electronics',
         'price': 44.99,
-        'image': 'powerbank.jpg',
+        'image': 'https://source.unsplash.com/400x300/?powerbank,battery,charger',
         'description': 'Batterie externe 20000mAh'
     },
     {
@@ -146,7 +146,7 @@ PRODUCTS = [
         'name': 'USB Hub 7 Ports',
         'category': 'electronics',
         'price': 34.99,
-        'image': 'hub.jpg',
+        'image': 'https://source.unsplash.com/400x300/?usb,hub,connector',
         'description': 'Hub USB 3.0 haute vitesse'
     },
     # === CLOTHING (18-25) ===
@@ -155,7 +155,7 @@ PRODUCTS = [
         'name': 'Winter Jacket',
         'category': 'clothing',
         'price': 129.99,
-        'image': 'jacket.jpg',
+        'image': 'https://source.unsplash.com/400x300/?winter,jacket,coat',
         'description': 'Veste d\'hiver chaude et élégante'
     },
     {
@@ -163,7 +163,7 @@ PRODUCTS = [
         'name': 'Casual Dress',
         'category': 'clothing',
         'price': 59.99,
-        'image': 'dress.jpg',
+        'image': 'https://source.unsplash.com/400x300/?dress,casual,fashion',
         'description': 'Robe décontractée chic'
     },
     {
@@ -171,7 +171,7 @@ PRODUCTS = [
         'name': 'Leather Belt',
         'category': 'clothing',
         'price': 34.99,
-        'image': 'belt.jpg',
+        'image': 'https://source.unsplash.com/400x300/?belt,leather,accessories',
         'description': 'Ceinture cuir véritable'
     },
     {
@@ -179,7 +179,7 @@ PRODUCTS = [
         'name': 'Socks Pack',
         'category': 'clothing',
         'price': 14.99,
-        'image': 'socks.jpg',
+        'image': 'https://source.unsplash.com/400x300/?socks,fabric,apparel',
         'description': 'Pack de 5 paires de chaussettes'
     },
     {
@@ -187,7 +187,7 @@ PRODUCTS = [
         'name': 'Baseball Cap',
         'category': 'clothing',
         'price': 24.99,
-        'image': 'cap.jpg',
+        'image': 'https://source.unsplash.com/400x300/?cap,baseball,hat',
         'description': 'Casquette baseball ajustable'
     },
     {
@@ -195,7 +195,7 @@ PRODUCTS = [
         'name': 'Sports Shorts',
         'category': 'clothing',
         'price': 39.99,
-        'image': 'shorts.jpg',
+        'image': 'https://source.unsplash.com/400x300/?shorts,sports,gym',
         'description': 'Short de sport respirant'
     },
     {
@@ -203,7 +203,7 @@ PRODUCTS = [
         'name': 'Polo Shirt',
         'category': 'clothing',
         'price': 44.99,
-        'image': 'polo.jpg',
+        'image': 'https://source.unsplash.com/400x300/?polo,shirt,casual',
         'description': 'Polo classique confortable'
     },
     {
@@ -211,7 +211,7 @@ PRODUCTS = [
         'name': 'Scarf Wool',
         'category': 'clothing',
         'price': 29.99,
-        'image': 'scarf.jpg',
+        'image': 'https://source.unsplash.com/400x300/?scarf,wool,winter',
         'description': 'Écharpe laine premium'
     },
     # === HOME (26-32) ===
@@ -220,7 +220,7 @@ PRODUCTS = [
         'name': 'Bath Towel',
         'category': 'home',
         'price': 24.99,
-        'image': 'towel.jpg',
+        'image': 'https://source.unsplash.com/400x300/?towel,bath,textile',
         'description': 'Serviette de bain douce et absorbante'
     },
     {
@@ -228,7 +228,7 @@ PRODUCTS = [
         'name': 'Pillow Memory Foam',
         'category': 'home',
         'price': 59.99,
-        'image': 'pillow.jpg',
+        'image': 'https://source.unsplash.com/400x300/?pillow,foam,bed',
         'description': 'Oreiller mousse à mémoire'
     },
     {
@@ -236,7 +236,7 @@ PRODUCTS = [
         'name': 'Bed Sheet Set',
         'category': 'home',
         'price': 79.99,
-        'image': 'bedsheet.jpg',
+        'image': 'https://source.unsplash.com/400x300/?bedsheet,linen,cotton',
         'description': 'Ensemble draps coton 100%'
     },
     {
@@ -244,7 +244,7 @@ PRODUCTS = [
         'name': 'Kitchen Knife Set',
         'category': 'home',
         'price': 89.99,
-        'image': 'knives.jpg',
+        'image': 'https://source.unsplash.com/400x300/?knife,kitchen,cooking',
         'description': 'Ensemble 5 couteaux de cuisine'
     },
     {
@@ -252,7 +252,7 @@ PRODUCTS = [
         'name': 'Storage Box',
         'category': 'home',
         'price': 34.99,
-        'image': 'box.jpg',
+        'image': 'https://source.unsplash.com/400x300/?storage,box,organize',
         'description': 'Boîte de rangement modulable'
     },
     {
@@ -260,7 +260,7 @@ PRODUCTS = [
         'name': 'Candle Scented',
         'category': 'home',
         'price': 19.99,
-        'image': 'candle.jpg',
+        'image': 'https://source.unsplash.com/400x300/?candle,scented,aromatherapy',
         'description': 'Bougie parfumée lavande'
     },
     {
@@ -268,7 +268,7 @@ PRODUCTS = [
         'name': 'Bed Frame Wood',
         'category': 'home',
         'price': 299.99,
-        'image': 'bedframe.jpg',
+        'image': 'https://source.unsplash.com/400x300/?bed,frame,wood,furniture',
         'description': 'Cadre de lit en bois massif'
     },
     # === BOOKS (33-35) ===
@@ -277,7 +277,7 @@ PRODUCTS = [
         'name': 'Book JavaScript',
         'category': 'books',
         'price': 34.99,
-        'image': 'book_js.jpg',
+        'image': 'https://source.unsplash.com/400x300/?javascript,programming,code',
         'description': 'Maîtriser le JavaScript moderne'
     },
     {
@@ -285,7 +285,7 @@ PRODUCTS = [
         'name': 'Book Machine Learning',
         'category': 'books',
         'price': 49.99,
-        'image': 'book_ml.jpg',
+        'image': 'https://source.unsplash.com/400x300/?machine,learning,ai,data',
         'description': 'Introduction au Machine Learning'
     },
     {
@@ -293,7 +293,7 @@ PRODUCTS = [
         'name': 'Book Design Patterns',
         'category': 'books',
         'price': 44.99,
-        'image': 'book_design.jpg',
+        'image': 'https://source.unsplash.com/400x300/?design,patterns,code',
         'description': 'Patterns de conception pour tous'
     }
 ]

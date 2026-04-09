@@ -19,6 +19,8 @@ const USER_ID = `user_${Date.now()}`; // Unique user ID per session
 let currentProductId = null;
 let userState = null;
 let allProducts = [];
+let currentPage = 1;
+const PRODUCTS_PER_PAGE = 12;  // 12 produits par page
 
 // ============================================================
 // Utility: API Calls
@@ -74,24 +76,22 @@ function renderProductGrid() {
     const grid = document.getElementById('products-grid');
     grid.innerHTML = '';
 
-    allProducts.forEach(product => {
+    // Pagination
+    const start = (currentPage - 1) * PRODUCTS_PER_PAGE;
+    const end = start + PRODUCTS_PER_PAGE;
+    const pageProducts = allProducts.slice(start, end);
+    const totalPages = Math.ceil(allProducts.length / PRODUCTS_PER_PAGE);
+
+    // Afficher les produits
+    pageProducts.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
         if (product.id === currentProductId) {
             card.classList.add('selected');
         }
 
-        // Generate a consistent emoji for each product based on category
-        const categoryEmojis = {
-            'electronics': '📱',
-            'clothing': '👕',
-            'home': '🏠',
-            'books': '📚'
-        };
-        const emoji = categoryEmojis[product.category] || '📦';
-
         card.innerHTML = `
-            <div class="product-image">${emoji}</div>
+            <img src="${product.image}" alt="${product.name}" class="product-image-img" />
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
                 <div class="product-category">${product.category}</div>
@@ -100,7 +100,6 @@ function renderProductGrid() {
             </div>
         `;
 
-        // View product on click (anywhere except buy button)
         card.addEventListener('click', (e) => {
             if (e.target.classList.contains('btn-buy-grid')) {
                 e.stopPropagation();
@@ -112,6 +111,47 @@ function renderProductGrid() {
 
         grid.appendChild(card);
     });
+
+    // Pagination buttons
+    const section = document.querySelector('.products-section');
+    const existingPagination = section.querySelector('.pagination');
+    if (existingPagination) existingPagination.remove();
+
+    const paginationDiv = document.createElement('div');
+    paginationDiv.className = 'pagination';
+    paginationDiv.style.cssText = 'text-align: center; margin-top: 20px; display: flex; justify-content: center; gap: 10px;';
+
+    // Bouton Previous
+    if (currentPage > 1) {
+        const prevBtn = document.createElement('button');
+        prevBtn.textContent = '← Previous';
+        prevBtn.style.cssText = 'padding: 10px 15px; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer;';
+        prevBtn.onclick = () => {
+            currentPage--;
+            renderProductGrid();
+        };
+        paginationDiv.appendChild(prevBtn);
+    }
+
+    // Page info
+    const pageInfo = document.createElement('span');
+    pageInfo.textContent = `Page ${currentPage} / ${totalPages}`;
+    pageInfo.style.cssText = 'padding: 10px 15px; font-weight: 600; color: #667eea;';
+    paginationDiv.appendChild(pageInfo);
+
+    // Bouton Next
+    if (currentPage < totalPages) {
+        const nextBtn = document.createElement('button');
+        nextBtn.textContent = 'Next →';
+        nextBtn.style.cssText = 'padding: 10px 15px; background: #667eea; color: white; border: none; border-radius: 6px; cursor: pointer;';
+        nextBtn.onclick = () => {
+            currentPage++;
+            renderProductGrid();
+        };
+        paginationDiv.appendChild(nextBtn);
+    }
+
+    section.appendChild(paginationDiv);
 }
 
 function updateUserStats() {
@@ -133,18 +173,9 @@ function updateCurrentProductDisplay() {
     const product = allProducts.find(p => p.id === currentProductId);
     if (!product) return;
 
-    const categoryEmojis = {
-        'electronics': '📱',
-        'clothing': '👕',
-        'home': '🏠',
-        'books': '📚'
-    };
-
     const display = document.getElementById('current-product');
     display.innerHTML = `
-        <div style="margin-bottom: 15px; font-size: 2em;">
-            ${categoryEmojis[product.category] || '📦'}
-        </div>
+        <img src="${product.image}" alt="${product.name}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;" />
         <div class="product-name">${product.name}</div>
         <div class="product-category">${product.category}</div>
         <div class="product-price">$${product.price.toFixed(2)}</div>
@@ -176,18 +207,9 @@ async function updateRecommendation() {
 
     updateAPIStatus('ok');
 
-    const categoryEmojis = {
-        'electronics': '📱',
-        'clothing': '👕',
-        'home': '🏠',
-        'books': '📚'
-    };
-
     const html = `
         <div style="background: white; padding: 12px; border-radius: 6px;">
-            <div style="font-size: 1.8em; margin-bottom: 8px;">
-                ${categoryEmojis[rec.product.category] || '📦'}
-            </div>
+            <img src="${rec.product.image}" alt="${rec.product.name}" style="width: 100%; height: 150px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" />
             <div class="product-name">${rec.product.name}</div>
             <div class="product-category">${rec.product.category}</div>
             <div class="product-price">$${rec.product.price.toFixed(2)}</div>
